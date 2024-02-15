@@ -1,0 +1,118 @@
+@import "../../styles/_Medidas";
+.header{
+    display: flex;
+    align-items: center;
+    height: 700px;
+    @include tablet{
+        flex-direction: column;
+        height: 850px;
+    }
+    @include mobile{
+        flex-direction: column;
+    }
+    .header-img{
+        height: 100%;
+        margin-left: 10%;
+        @include desktop1{
+            height: 90%;
+            margin: 0;
+        }
+        @include mobile{
+            margin: 0;
+            height: 70%;
+        }
+        img{
+            height: 100%;
+        }
+    }
+    .header-text{
+        margin-left: 5%;
+        line-height: 40.83px;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin:0;
+            text-align: center;
+            padding: 0px 20px;
+            
+        }
+        .titulo{
+            font-family: "Montserrat";
+            font-size: 58.83px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 88.83px;
+            color: #313880;
+            @include desktop1{
+               width: 100%;
+               line-height: 50px;
+               font-size: 48px;
+            }
+            @include mobile{
+                text-align: center;
+                font-size: 38px;
+                line-height: 48.83px;
+            }
+        }
+        .header-p{
+            font-family: "Montserrat";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 500px;
+            margin-bottom: 10px;
+            color: #313880;
+            @include desktop1{
+                width: auto;
+            }
+            @include mobile{
+                text-align: center;
+                font-size: 24px;
+                width: auto;
+            }
+        }
+        .header-p2{
+            font-family: "Montserrat";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30.83px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 620px;
+            color: #313880;
+            @include desktop1{
+                width: auto;
+            }
+            @include mobile{
+                text-align: center;
+                font-size: 24px;
+                width: auto;
+            }
+        }
+        .header-btn{
+            font-weight: 700;
+            font-family: "Montserrat";
+            font-size: 24px;
+            border: hidden;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: #313880;
+            cursor: pointer;
+            transition: .2s;
+            @include mobile{
+                margin-top: 15px;
+                font-size: 18px;
+            }
+            &:hover{
+                background: #fff;
+                transition: .2s;
+                box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.75);
+            }
+        }
+    }
+}
