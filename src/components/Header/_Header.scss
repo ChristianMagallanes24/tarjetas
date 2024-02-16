@@ -2,13 +2,14 @@
 .header{
     display: flex;
     align-items: center;
-    height: 700px;
+    height: 900px;
     @include tablet{
         flex-direction: column;
-        height: 850px;
+       
     }
     @include mobile{
         flex-direction: column;
+        
     }
     .header-img{
         height: 100%;
@@ -17,9 +18,13 @@
             height: 90%;
             margin: 0;
         }
+        @include tablet{
+            margin: 0;
+            height: 600px;
+        }
         @include mobile{
             margin: 0;
-            height: 70%;
+            height: 500px;
         }
         img{
             height: 100%;
@@ -28,10 +33,16 @@
     .header-text{
         margin-left: 5%;
         line-height: 40.83px;
+        @include tablet{
+            margin: 0;
+            text-align: center;
+            padding: 0px 20px;
+        }
         @include mobile{
             display: flex;
             flex-direction: column;
             align-items: center;
+            height: auto;
             margin:0;
             text-align: center;
             padding: 0px 20px;
@@ -51,7 +62,7 @@
             }
             @include mobile{
                 text-align: center;
-                font-size: 38px;
+                font-size: 32px;
                 line-height: 48.83px;
             }
         }
@@ -71,7 +82,7 @@
             }
             @include mobile{
                 text-align: center;
-                font-size: 24px;
+                font-size: 22px;
                 width: auto;
             }
         }
@@ -84,13 +95,14 @@
             letter-spacing: 0em;
             text-align: left;
             width: 620px;
+            margin-bottom: 20px;
             color: #313880;
             @include desktop1{
                 width: auto;
             }
             @include mobile{
                 text-align: center;
-                font-size: 24px;
+                font-size: 22px;
                 width: auto;
             }
         }
@@ -101,18 +113,21 @@
             border: hidden;
             padding: 10px 20px;
             border-radius: 8px;
-            color: #313880;
+            color: #ffffff;
+            background-color: #313880;
             cursor: pointer;
+            text-decoration: none;
             transition: .2s;
             @include mobile{
-                margin-top: 15px;
+                margin-bottom: 18px;
                 font-size: 18px;
             }
             &:hover{
-                background: #fff;
+                background: #313880;
                 transition: .2s;
                 box-shadow: -5px 5px 5px 0px rgba(0,0,0,0.75);
             }
         }
     }
 }
+

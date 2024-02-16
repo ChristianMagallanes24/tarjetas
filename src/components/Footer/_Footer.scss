@@ -1,0 +1,13 @@
+@import "../../styles/_Medidas";
+.footer{
+    background-color: #313880;
+    color: white;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    @include mobile{
+        margin-top: auto;
+    }
+}
